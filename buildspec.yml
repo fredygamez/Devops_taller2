@@ -12,3 +12,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  name: build-artifact-$(date +%Y-%m-%d)
