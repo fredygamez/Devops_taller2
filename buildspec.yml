@@ -4,7 +4,11 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
-      - echo PreBuilding...
+      - echo "Iniciando pre-compilación..."
+  build:
+    commands:
+      - echo "Ejecutando pruebas unitarias..."
+      - python -m unittest test_app.py
 artifacts:
   files:
     - '**/*'
